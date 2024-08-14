@@ -12,6 +12,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/google/raviole/aosp_oriole.mk)
 $(call inherit-product, device/google/gs101/lineage_common.mk)
 
+-include vendor/lineage-priv/keys/keys.mk
+
 include device/google/raviole/oriole/device-lineage.mk
 
 # Device identifier. This must come after all inclusions
